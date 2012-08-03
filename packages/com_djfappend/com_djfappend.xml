@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>Djf Append</name>
+	<creationDate>December 2011</creationDate>
+	<author>David Frassi</author>
+	<authorEmail>info@davidfrassi.it</authorEmail>
+	<authorUrl>http://www.davidfrassi.it</authorUrl>
+	<copyright>(C) 2009-2010 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>5.1 Beta</version>
+<!-- oltre a definire questi parametri nel file config.xml è necessario specificarli anche qui
+se si vuole che vengano inseriti la prima volta nella tabella jos_components -->
+<config>
+	<fields name="params">
+	<fieldset name="basic">
+		<field name="maxsize" type="text" default="500000000"  label="maxsize" size="50" description="maxsize" />
+		<field name="googleKey" type="textarea" rows="3" cols="30" default=""  label="googleKey" size="255" description="googleKey" />
+
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		<field name="i_width" type="text" default="320"  label="i_width" size="50" description="Image width in full view" />
+		<field name="i_height" type="text" default="210"  label="i_height" size="50" description="Image height in full view" />
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="it_width" type="text" default="200"  label="it_width" size="50" description="Image width in brief view" />
+		<field name="it_height" type="text" default="180"  label="it_height" size="50" description="Image height in brief view" />
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="micro_width" type="text" default="80"  label="micro_width" size="50" description="Image width in thumb view" />
+		<field name="micro_height" type="text" default="60"  label="micro_height" size="50" description="Image height in thumb view" />
+	</fieldset>
+	</fields>
+</config>
+	<!-- database section -->
+	
+	
+	
+	<install>
+		<sql folder="admin/sql">
+			<file driver="mysql" charset="utf8">install.djfappend.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql folder="admin/sql">
+			<file driver="mysql" charset="utf8">uninstall.djfappend.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.djfappend.php</installfile>
+	<uninstallfile>uninstall.djfappend.php</uninstallfile>
+	
+	<files folder="component">
+		<filename>index.html</filename>
+		<filename>djfappend.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>tables</folder>
+		<folder>models</folder>
+		<folder>helpers</folder>
+		<folder>views</folder>
+		<folder>images</folder>
+		<folder>media</folder>
+		<folder>assets</folder>
+	</files>
+	
+	<languages folder="component/lang">
+		<language tag="en-GB">en-GB.com_djfappend.ini</language>
+		<language tag="it-IT">it-IT.com_djfappend.ini</language>
+	</languages>
+	
+	
+		
+	
+	
+	
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_djfappend/images/com_djfappend_small.png">Djf Append</menu>
+		<submenu>
+			<!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+			<menu img="components/com_djfappend/assets/images/header/field-16.png" link="option=com_djfappend&amp;controller=field">FIELD</menu>
+			<menu img="components/com_djfappend/assets/images/header/icon-16-content.png" link="option=com_djfappend&amp;controller=field_type">TYPOLOGY</menu>
+			<menu img="components/com_djfappend/assets/images/header/value-16.png" link="option=com_djfappend&amp;controller=field_value">VALUES</menu>
+		</submenu>
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder   
+		 to copy FROM in the package to install therefore files copied   
+		  in this section are copied from /admin/ in the package -->
+	
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>admin.djfappend.php</filename>	
+			<filename>version.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>images</folder>
+			<folder>assets</folder>
+			<folder>media</folder>
+			<folder>sql</folder>
+	
+		</files>
+	
+		<!-- Administration Language File Copy Section -->
+		<languages folder="admin/lang">
+			<language tag="en-GB">en-GB.com_djfappend.ini</language>
+			<language tag="it-IT">it-IT.com_djfappend.ini</language>
+			<language tag="en-GB">en-GB.com_djfappend.menu.ini</language>
+			<language tag="it-IT">it-IT.com_djfappend.menu.ini</language>
+
+		</languages>
+		
+	
+		
+	</administration>
+
+</extension>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors-xtd">
+	<name>Content - Djf Append in Text</name>
+	<author>David Frassi</author>
+	<creationDate>22 March 2010</creationDate>
+	<copyright>(C) 2010 David Frassi All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@davidfrassi.it</authorEmail>
+	<authorUrl>http://www.davidfrassi.it</authorUrl>
+	<version>1.0 beta</version>
+	<description>Djf Append In Text Plugin Installed</description>
+	<files >
+			<!-- database script -->
+			<filename plugin="Djf Append in Text">djfappend_intext.php</filename>			
+		</files>	
+</extension>

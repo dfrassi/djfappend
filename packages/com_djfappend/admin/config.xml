@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+		<param name="maxsize" type="text" default="500000000"  label="maxsize" size="50" description="maxsize" />
+		
+		<param name="googleKey" type="textarea" rows="3" cols="30" default=""  label="googleKey" size="255" description="googleKey" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="i_width" type="text" default="320"  label="i_width" size="50" description="Image width in full view" />
+		<param name="i_height" type="text" default="210"  label="i_height" size="50" description="Image height in full view" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="it_width" type="text" default="200"  label="it_width" size="50" description="Image width in brief view" />
+		<param name="it_height" type="text" default="180"  label="it_height" size="50" description="Image height in brief view" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="micro_width" type="text" default="80"  label="micro_width" size="50" description="Image width in thumb view" />
+		<param name="micro_height" type="text" default="60"  label="micro_height" size="50" description="Image height in thumb view" />
+
+	
+	</params>
+</config>
+<!-- in questo file ci stanno i parametri che vengono visualizzati come una finestra di popup nel 
+componente -->

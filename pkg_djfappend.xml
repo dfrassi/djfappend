@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.7">
+    	<name>pkg_djfappend</name>
+	<packagename>djfappend</packagename>
+    	<version>1.7.0</version>
+    	<url>http://www.joomla.org</url>
+    	<packager>David Frassi</packager>
+    	<packagerurl>http://joomlacode.org/gf/project/attachments/</packagerurl>
+    	<description>DJFACL_PACKAGE</description>
+    	<update>http://update.joomla.org/update/packages/everything</update>
+	<files folder="packages">
+		<file type="plugin" id="djfappend_inset" group="editors-xtd">plg_djfappend_inset.zip</file>
+		<file type="plugin" id="djfappend_intext" group="content">plg_djfappend_intext.zip</file>
+		<file type="plugin" id="djfappend" group="content">plg_djfappend.zip</file>
+		<file type="component" id="com_djfappend">com_djfappend.zip</file>		
+    	</files>
+</extension>

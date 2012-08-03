@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>Button - Djf Append_inset</name>
+	<author>Joomla! Project</author>
+	<creationDate>March 2006</creationDate>
+	<copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.5</version>
+	<description>DESCdjfappend_inset</description>
+	<files>
+		<filename plugin="djfappend_inset">djfappend_inset.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+		<field name="flv" type="text" default="flvremote"  label="flv" size="50" description="flv" />
+		<field name="mp3" type="text" default="mp3remote"  label="mp3" size="50" description="mp3" />
+		<field name="mp4" type="text" default="mp4remote"  label="mp4" size="50" description="mp4" />
+		<field name="jpg" type="text" default="jpgremote"  label="jpg" size="50" description="jpg" />
+	</fieldset>
+	</fields>
+	</config>
+</extension>
