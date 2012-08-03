@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Article Layout">
+		<message>
+			<![CDATA[djfappend Layout]]>
+		</message>
+	</layout>
+	<state><name>djfappend Layout</name>
+		<description>djfappend Layout</description>
+		
+		<url>
+		<param name="catid" type="category" label="Category" description="Choose a category..." />
+			<param name="field_1" type="text" default="" label="field_1" size="50" description="anno" />						
+			<param name="field_2" type="text" default="" label="field_2" size="50" description="anno" />
+			<param name="field_3" type="text" default="" label="field_3" size="50" description="anno" />
+			<param name="field_4" type="text" default="" label="field_4" size="50" description="anno" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

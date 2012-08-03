@@ -22,7 +22,7 @@ class fieldHelperToolbar extends JObject
 	 * @since 1.5
 	 */
 	function title($title, $icon = 'generic.png') {
-		global $mainframe;
+		$mainframe =& JFactory::getApplication();
 		//strip the extension
 		$icon = preg_replace ( '#\.[^.]*$#', '', $icon );
 

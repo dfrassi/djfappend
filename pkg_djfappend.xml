@@ -9,9 +9,9 @@
     	<description>DJFACL_PACKAGE</description>
     	<update>http://update.joomla.org/update/packages/everything</update>
 	<files folder="packages">
-		<file type="plugin" id="djfappend_inset" group="editors-xtd">plg_djfappend_inset.zip</file>
-		<file type="plugin" id="djfappend_intext" group="content">plg_djfappend_intext.zip</file>
+		<file type="component" id="com_djfappend">com_djfappend.zip</file>	
 		<file type="plugin" id="djfappend" group="content">plg_djfappend.zip</file>
-		<file type="component" id="com_djfappend">com_djfappend.zip</file>		
+		<file type="plugin" id="djfappend_intext" group="editors-xtd">plg_djfappend_intext.zip</file>
+		<file type="plugin" id="djfappend_inset" group="content">plg_djfappend_inset.zip</file>
     	</files>
 </extension>
